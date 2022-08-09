@@ -1,0 +1,137 @@
+body {
+  font-family: 'Cormorant SC', serif !important;
+}
+
+.logoStyle {
+  height: 50px;
+}
+
+.heroStyle {
+  background-image:linear-gradient(to bottom, rgba(255,255,255, 0.4), rgba(0,0,0,0.7)), url('./images/hero\ background.avif');
+  background-size: cover;
+}
+
+.hero h1 {
+  font-size: 65px;
+  margin: 5px;
+}
+
+.hero h2 {
+  display: inline;
+  font-size: 20px;
+  border-top: 1px solid #fff;
+}
+
+input {
+  border: 1px solid #3A3151 !important;
+}
+
+input:focus {
+  box-shadow: 0 0 7px #3A3151 !important;
+}
+
+button {
+  background-color: #3A3151 !important;
+  font-family: 'Cormorant SC', serif !important;
+}
+
+article {
+  visibility: hidden; 
+}
+
+#multiplePop {
+  background-color: rgba(0,0,0,0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  visibility: hidden;
+}
+ 
+#closeButton {
+  position: relative;
+  top: 0;
+  right: 0;
+}
+
+#drinkOptions {
+  column-count: 3;
+  column-gap: 10px;
+  text-align: justify;
+  line-height: 120%;
+  overflow: auto;
+  height: 400px;
+}
+
+label {
+  width: 90%;
+  padding: 5px 0;
+}
+
+.optionX {
+  display: inline; 
+}
+
+.imageStyle {
+  width: 250px !important;
+  height: 250px !important;
+}
+
+/* Larger devices */
+@media screen and (max-width: 1200px) {
+  #drinkOptions {
+    column-count: 3;
+    column-gap: 10px;
+  }
+}
+
+/* Larger devices */
+@media screen and (max-width: 992px) {
+  aside {
+    width: 100% !important;
+  }
+  .imageStyle {
+    width: 200px !important;
+    height: 200px !important;
+  }
+  #drinkOptions {
+    column-count: 2;
+    column-gap: 10px;
+  }
+}
+
+/* Mid size devices */
+@media screen and (max-width: 768px) {
+  aside {
+    width: 100%;
+  }
+  .imageStyle {
+    width: 150px !important;
+    height: 150px !important;
+  }
+  #drinkOptions {
+    column-count: 2;
+    column-gap: 10px;
+  }
+}
+
+/* Smaller devices */
+@media screen and (max-width: 576px) {
+  aside {
+    width: 100%;
+  }
+  .imageStyle {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  #drinkOptions {
+    column-count: 1;
+    column-gap: 10px;
+  }
+}
